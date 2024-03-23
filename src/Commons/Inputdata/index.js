@@ -8,7 +8,7 @@ import {
   View,
 } from 'react-native';
 
-export default function App() {
+const FormData = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -65,7 +65,7 @@ export default function App() {
       )}
     </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -96,3 +96,4 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 });
+export default FormData;
