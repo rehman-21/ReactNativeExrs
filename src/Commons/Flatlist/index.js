@@ -90,7 +90,9 @@ const FlatList = () => {
       </Text>
       <FlatList
         data={usersList}
-        renderItem={({item}) => <Text>{item.username}</Text>}
+        renderItem={({item}) => (
+          <Text style={{color: '#000'}}>{item.username}</Text>
+        )}
       />
     </View>
   );

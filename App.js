@@ -1,10 +1,12 @@
-import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import {StyleSheet, Text, View} from 'react-native';
+import CustomContext from './src/Commons/Component';
+import UseEffectWork from './src/Commons/UseEffect';
 
 const App = () => {
   return (
     <View>
-      <Text>App</Text>
+      <UseEffectWork />
     </View>
   );
 };
