@@ -8,7 +8,6 @@ const CustomContext = () => {
   return (
     <Context.Provider value={text}>
       <View>
-        <ComponentA />
       </View>
     </Context.Provider>
   );
@@ -17,3 +16,4 @@ const CustomContext = () => {
 export default CustomContext;
 
 const styles = StyleSheet.create({});
+        <ComponentA />

@@ -1,16 +1,20 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
-import CustomContext from './src/Commons/Component';
-import UseEffectWork from './src/Commons/UseEffect';
+import {SafeAreaView, StyleSheet} from 'react-native';
+import VoiceRecorder from './src/Commons/VoiceRecorder';
 
 const App = () => {
   return (
-    <View>
-      <UseEffectWork />
-    </View>
+    <SafeAreaView style={styles.container}>
+      <VoiceRecorder />
+    </SafeAreaView>
   );
 };
 
-export default App;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
+});
 
-const styles = StyleSheet.create({});
+export default App;
